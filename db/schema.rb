@@ -13,9 +13,8 @@
 ActiveRecord::Schema.define(version: 20140922151507) do
 
   create_table "frogs", force: :cascade do |t|
-    t.string  "name"
-    t.string  "color"
-    t.integer "pond_id"
+    t.string "name"
+    t.string "color"
   end
 
   create_table "ponds", force: :cascade do |t|
@@ -24,9 +23,8 @@ ActiveRecord::Schema.define(version: 20140922151507) do
   end
 
   create_table "tadpoles", force: :cascade do |t|
-    t.string  "name"
-    t.string  "color"
-    t.integer "frog_id"
+    t.string "name"
+    t.string "color"
   end
 
 end
