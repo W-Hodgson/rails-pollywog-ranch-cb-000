@@ -2,7 +2,7 @@
   <h1><%= @tadpole.name %> the Tadpole</h1>
 
   <!-- make form to make "Become a frog" button here -->
-  <%= form_tag("/tadpoles/#{@tadpole.id}/metamorphose", method: :post) do %>
+  <%= form_tag(metamorphose_path(@tadpole)) do %>
     <%= submit_tag "Become a Frog" %>
   <% end %>
   <!-- the form should post to /tadpoles/:id/metamorphose -->
