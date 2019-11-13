@@ -3,7 +3,7 @@ class TadpolesController < ApplicationController
 
   # add your metamorphose action here
   def metamorphose
-
+    @tadpole = Tadpole.find(params[:id])
   end
 
   def index
