@@ -5,6 +5,7 @@ class TadpolesController < ApplicationController
   def metamorphose
     @tadpole = Tadpole.find(params[:id])
     @frog = Frog.new(name: @tadpole.name, color: @tadpole.color)
+    @tadpole.destroy
   end
 
   def index
